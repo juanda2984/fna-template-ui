@@ -1,0 +1,9 @@
+/*
+ * Public API Surface of fna-template-ui
+ */
+export * from './lib/fna-template-ui.service';
+export * from './lib/fna-template-ui.component';
+export * from './lib/fna-template-ui.module';
+export * from './lib/header/header.component';
+export * from './lib/footer/footer.component';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL2ZuYS10ZW1wbGF0ZS11aS9zcmMvcHVibGljLWFwaS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7R0FFRztBQUVILGNBQWMsK0JBQStCLENBQUM7QUFDOUMsY0FBYyxpQ0FBaUMsQ0FBQztBQUNoRCxjQUFjLDhCQUE4QixDQUFDO0FBRTdDLGNBQWMsK0JBQStCLENBQUM7QUFDOUMsY0FBYywrQkFBK0IsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBQdWJsaWMgQVBJIFN1cmZhY2Ugb2YgZm5hLXRlbXBsYXRlLXVpXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9saWIvZm5hLXRlbXBsYXRlLXVpLnNlcnZpY2UnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvZm5hLXRlbXBsYXRlLXVpLmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9mbmEtdGVtcGxhdGUtdWkubW9kdWxlJztcblxuZXhwb3J0ICogZnJvbSAnLi9saWIvaGVhZGVyL2hlYWRlci5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQnO1xuIl19
