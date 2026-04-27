@@ -1,19 +1,18 @@
 {
-  "name": "@juanda2984/fna-ui-lib",
-  "version": "0.0.2",
+  "name": "fna-template-ui",
+  "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": "^7.2.16",
-    "@angular/core": "^7.2.16"
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0"
   },
   "dependencies": {
-    "tslib": "^1.9.0"
+    "tslib": "^2.3.0"
   },
-  "main": "bundles/fna-ui-lib.umd.js",
-  "module": "fesm5/fna-ui-lib.js",
-  "es2015": "fesm2015/fna-ui-lib.js",
-  "esm2015": "esm2015/fna-ui-lib.js",
-  "fesm5": "fesm5/fna-ui-lib.js",
-  "fesm2015": "fesm2015/fna-ui-lib.js",
-  "typings": "fna-ui-lib.d.ts",
+  "main": "bundles/fna-template-ui.umd.js",
+  "module": "fesm2015/fna-template-ui.js",
+  "es2015": "fesm2015/fna-template-ui.js",
+  "esm2015": "esm2015/fna-template-ui.js",
+  "fesm2015": "fesm2015/fna-template-ui.js",
+  "typings": "fna-template-ui.d.ts",
   "sideEffects": false
 }
