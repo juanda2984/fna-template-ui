@@ -1,0 +1,54 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+import { Component } from '@angular/core';
+var FooterComponent = /** @class */ (function () {
+    function FooterComponent() {
+        this.fechaActual = '';
+        this.anio = new Date().getFullYear();
+    }
+    /**
+     * @return {?}
+     */
+    FooterComponent.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
+        /** @type {?} */
+        var fecha = new Date();
+        /** @type {?} */
+        var meses = [
+            'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+            'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'
+        ];
+        this.fechaActual = fecha.getDate() + " de " + meses[fecha.getMonth()] + " de " + fecha.getFullYear();
+    };
+    /**
+     * @param {?} url
+     * @return {?}
+     */
+    FooterComponent.prototype.abrirUrl = /**
+     * @param {?} url
+     * @return {?}
+     */
+    function (url) {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
+    FooterComponent.decorators = [
+        { type: Component, args: [{
+                    selector: 'app-footer',
+                    template: "<footer id=\"footerFNA\">\n  <div class=\"footer-main\">\n    <div class=\"footer-grid\">\n\n      <div class=\"footer-vigilado\">\n        <img\n          src=\"assets/fna/img/logo-vigilado.png\"\n          alt=\"Vigilado Superfinanciera\"\n          class=\"imgvigilado\"\n        />\n      </div>\n\n      <div class=\"footer-col footer-correspondencia\">\n        <h6>Punto de atenci\u00F3n principal - Correspondencia</h6>\n\n        <p>Calle 12 # 65 - 11, Puente Aranda, Bogot\u00E1 - Colombia</p>\n\n        <p>\n          Lunes a viernes de 8:00 a.m. - 4:00 p.m.<br />\n          S\u00E1bados de 8:00 a.m. - 1:00 p.m.\n        </p>\n\n        <img\n          src=\"assets/fna/img/icontec.png\"\n          alt=\"Icontec\"\n          class=\"icontec-img\"\n        />\n      </div>\n\n      <div class=\"footer-col footer-sede\">\n        <h6>Sede principal</h6>\n\n        <p>Carrera 65 # 11 - 83, Puente Aranda, Bogot\u00E1 - Colombia</p>\n\n        <p>\n          <strong>Tel\u00E9fono:</strong> 601 307 7070<br />\n          <strong>L\u00EDnea gratuita nacional:</strong> 01 8000 52 7070<br />\n          <strong>L\u00EDnea de legalizaci\u00F3n:</strong> 01 8000 12 3362\n        </p>\n\n        <p class=\"notificaciones\">\n          <strong>Notificaciones judiciales:</strong>\n        </p>\n\n        <p>\n          <a href=\"mailto:notificacionesjudiciales@fna.gov.co\">\n            notificacionesjudiciales@fna.gov.co\n          </a>\n        </p>\n\n        <h6 class=\"app-title\">Descarga nuestra app</h6>\n\n        <div class=\"apps\">\n          <button\n            type=\"button\"\n            (click)=\"abrirUrl('https://itunes.apple.com/co/app/fna-movil-agil/id1138892675?mt=8')\"\n          >\n            <span class=\"ion-social-apple\"></span>\n            <span>App Store</span>\n          </button>\n\n          <button\n            type=\"button\"\n            (click)=\"abrirUrl('https://play.google.com/store/apps/details?id=com.ibm.fna.movil')\"\n          >\n            <span class=\"ion-social-android\"></span>\n            <span>Google play</span>\n          </button>\n\n          <button\n            type=\"button\"\n            class=\"huawei-btn\"\n            (click)=\"abrirUrl('https://huaweimobileservices.com/es/appgallery-esp/')\"\n          >\n            <span class=\"huawei-icon\"></span>\n            <span>Huawei App<br />Gallery</span>\n          </button>\n        </div>\n      </div>\n\n      <div class=\"footer-col footer-fecha\">\n        <h6>\u00DAltima actualizaci\u00F3n</h6>\n        <p>{{ fechaActual }}</p>\n      </div>\n\n    </div>\n  </div>\n\n  <div class=\"footer-bottom\">\n    <div class=\"footer-bottom-inner\">\n      <nav class=\"footer-links\">\n        <a href=\"https://www.fna.gov.co/sobre-el-fna\" target=\"_blank\" rel=\"noopener noreferrer\">Sobre el FNA</a>\n        <a href=\"https://www.fna.gov.co/prensa\" target=\"_blank\" rel=\"noopener noreferrer\">Prensa</a>\n        <a href=\"https://www.fna.gov.co/atencion-ciudadana/peticiones-quejas-reclamos-y-denuncias\" target=\"_blank\" rel=\"noopener noreferrer\">PQRyD</a>\n        <a href=\"https://www.fna.gov.co/atencion-ciudadana/transparencia-y-acceso-a-la-informacion\" target=\"_blank\" rel=\"noopener noreferrer\">Transparencia y acceso a la informaci\u00F3n</a>\n        <a href=\"https://www.fna.gov.co/mapa-del-sitio\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa del sitio</a>\n        <a href=\"https://www.fna.gov.co/atencion-ciudadana/condiciones-y-politicas\" target=\"_blank\" rel=\"noopener noreferrer\">Condiciones y pol\u00EDticas</a>\n      </nav>\n\n      <div class=\"footer-rights\">\n        \u00A9 FNA Todos los derechos reservados {{ anio }}\n      </div>\n    </div>\n  </div>\n</footer>",
+                    styles: ["#footerFNA{transform:scale(.7);transform-origin:top center;margin-left:-12.5%;width:100%;background:#fff;color:#333;font-family:Arial,Helvetica,sans-serif;border-top:1px solid #ddd}:host{display:block;width:100%}.footer-main{width:92%;max-width:1650px;margin:0 auto;padding:78px 0 70px;border-bottom:1px solid #e0e0e0}.footer-grid{display:grid;grid-template-columns:70px 470px 520px 330px;column-gap:55px;align-items:start}.footer-vigilado{padding-top:52px}.imgvigilado{height:auto;opacity:.9;width:28px;filter:grayscale(100%);display:flex;align-items:flex-start;justify-content:flex-start}.footer-col h6{margin:0 0 18px;font-size:21px;line-height:1.2;font-weight:700;color:#333}.footer-col p{margin:0 0 18px;font-size:17px;line-height:1.4;color:#333}.footer-col strong{font-weight:700}.footer-col a{color:#1c6bb8;text-decoration:none;font-size:17px}.footer-col a:hover{text-decoration:underline}.footer-correspondencia{padding-top:0}.icontec-img{width:355px;height:auto;display:block;margin-top:100px}.footer-sede{padding-top:0}.notificaciones{margin-top:50px!important;margin-bottom:14px!important}.app-title{margin-top:48px!important;margin-bottom:16px!important}.apps{display:grid;grid-template-columns:190px 190px;gap:28px 36px}.apps button{width:190px;min-height:62px;border:0;border-radius:4px;background:#003087;color:#fff;font-size:18px;line-height:1.2;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:14px}.apps button span:first-child{font-size:32px}.huawei-btn{grid-column:1/2}.huawei-icon{width:40px;height:40px;background:url(/assets/fna/img/AppGallery1.png) center/contain no-repeat;border-radius:6px;display:inline-block}.footer-fecha{padding-top:0}.footer-bottom{max-width:1650px;margin:0 auto;padding:42px 0 22px}.footer-bottom-inner{display:flex;align-items:center;justify-content:space-between}.footer-links{display:flex;align-items:center;gap:30px;flex-wrap:wrap}.footer-links a{color:#333;text-decoration:none;font-size:17px;line-height:1.2}.footer-links a:hover{text-decoration:underline}.footer-rights{color:#333;font-size:17px;white-space:nowrap}@media (max-width:1200px){.footer-grid{grid-template-columns:60px 1fr 1fr;row-gap:40px}.footer-fecha{grid-column:2/4}.footer-bottom-inner{flex-direction:column;align-items:flex-start;gap:25px}}@media (max-width:768px){.footer-bottom,.footer-main{width:90%}.footer-grid{grid-template-columns:1fr}.footer-vigilado{padding-top:0}.icontec-img{width:280px;margin-top:35px}.apps{grid-template-columns:1fr}.apps button{width:220px}.footer-fecha{grid-column:auto}}"]
+                }] }
+    ];
+    return FooterComponent;
+}());
+export { FooterComponent };
+if (false) {
+    /** @type {?} */
+    FooterComponent.prototype.fechaActual;
+    /** @type {?} */
+    FooterComponent.prototype.anio;
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZm9vdGVyLmNvbXBvbmVudC5qcyIsInNvdXJjZVJvb3QiOiJuZzovL2ZuYS10ZW1wbGF0ZS11aS8iLCJzb3VyY2VzIjpbImxpYi9mb290ZXIvZm9vdGVyLmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7O0FBQUEsT0FBTyxFQUFFLFNBQVMsRUFBVSxNQUFNLGVBQWUsQ0FBQztBQUVsRDtJQUFBO1FBT0UsZ0JBQVcsR0FBVyxFQUFFLENBQUM7UUFDekIsU0FBSSxHQUFXLElBQUksSUFBSSxFQUFFLENBQUMsV0FBVyxFQUFFLENBQUM7SUFlMUMsQ0FBQzs7OztJQWJDLGtDQUFROzs7SUFBUjs7WUFDUSxLQUFLLEdBQUcsSUFBSSxJQUFJLEVBQUU7O1lBQ2xCLEtBQUssR0FBRztZQUNaLE9BQU8sRUFBRSxTQUFTLEVBQUUsT0FBTyxFQUFFLE9BQU8sRUFBRSxNQUFNLEVBQUUsT0FBTztZQUNyRCxPQUFPLEVBQUUsUUFBUSxFQUFFLFlBQVksRUFBRSxTQUFTLEVBQUUsV0FBVyxFQUFFLFdBQVc7U0FDckU7UUFFRCxJQUFJLENBQUMsV0FBVyxHQUFNLEtBQUssQ0FBQyxPQUFPLEVBQUUsWUFBTyxLQUFLLENBQUMsS0FBSyxDQUFDLFFBQVEsRUFBRSxDQUFDLFlBQU8sS0FBSyxDQUFDLFdBQVcsRUFBSSxDQUFDO0lBQ2xHLENBQUM7Ozs7O0lBRUQsa0NBQVE7Ozs7SUFBUixVQUFTLEdBQVc7UUFDbEIsTUFBTSxDQUFDLElBQUksQ0FBQyxHQUFHLEVBQUUsUUFBUSxFQUFFLHFCQUFxQixDQUFDLENBQUM7SUFDcEQsQ0FBQzs7Z0JBdEJGLFNBQVMsU0FBQztvQkFDVCxRQUFRLEVBQUUsWUFBWTtvQkFDdEIsK3JIQUFzQzs7aUJBRXZDOztJQW1CRCxzQkFBQztDQUFBLEFBdkJELElBdUJDO1NBbEJZLGVBQWU7OztJQUUxQixzQ0FBeUI7O0lBQ3pCLCtCQUF3QyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENvbXBvbmVudCwgT25Jbml0IH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5cbkBDb21wb25lbnQoe1xuICBzZWxlY3RvcjogJ2FwcC1mb290ZXInLFxuICB0ZW1wbGF0ZVVybDogJy4vZm9vdGVyLmNvbXBvbmVudC5odG1sJyxcbiAgc3R5bGVVcmxzOiBbJy4vZm9vdGVyLmNvbXBvbmVudC5jc3MnXVxufSlcbmV4cG9ydCBjbGFzcyBGb290ZXJDb21wb25lbnQgaW1wbGVtZW50cyBPbkluaXQge1xuXG4gIGZlY2hhQWN0dWFsOiBzdHJpbmcgPSAnJztcbiAgYW5pbzogbnVtYmVyID0gbmV3IERhdGUoKS5nZXRGdWxsWWVhcigpO1xuXG4gIG5nT25Jbml0KCk6IHZvaWQge1xuICAgIGNvbnN0IGZlY2hhID0gbmV3IERhdGUoKTtcbiAgICBjb25zdCBtZXNlcyA9IFtcbiAgICAgICdlbmVybycsICdmZWJyZXJvJywgJ21hcnpvJywgJ2FicmlsJywgJ21heW8nLCAnanVuaW8nLFxuICAgICAgJ2p1bGlvJywgJ2Fnb3N0bycsICdzZXB0aWVtYnJlJywgJ29jdHVicmUnLCAnbm92aWVtYnJlJywgJ2RpY2llbWJyZSdcbiAgICBdO1xuXG4gICAgdGhpcy5mZWNoYUFjdHVhbCA9IGAke2ZlY2hhLmdldERhdGUoKX0gZGUgJHttZXNlc1tmZWNoYS5nZXRNb250aCgpXX0gZGUgJHtmZWNoYS5nZXRGdWxsWWVhcigpfWA7XG4gIH1cblxuICBhYnJpclVybCh1cmw6IHN0cmluZyk6IHZvaWQge1xuICAgIHdpbmRvdy5vcGVuKHVybCwgJ19ibGFuaycsICdub29wZW5lcixub3JlZmVycmVyJyk7XG4gIH1cbn0iXX0=

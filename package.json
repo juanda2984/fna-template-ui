@@ -9,10 +9,13 @@
     "tslib": "^2.3.0"
   },
   "main": "bundles/fna-template-ui.umd.js",
-  "module": "fesm2015/fna-template-ui.js",
+  "module": "fesm5/fna-template-ui.js",
   "es2015": "fesm2015/fna-template-ui.js",
+  "esm5": "esm5/fna-template-ui.js",
   "esm2015": "esm2015/fna-template-ui.js",
+  "fesm5": "fesm5/fna-template-ui.js",
   "fesm2015": "fesm2015/fna-template-ui.js",
   "typings": "fna-template-ui.d.ts",
+  "metadata": "fna-template-ui.metadata.json",
   "sideEffects": false
 }
