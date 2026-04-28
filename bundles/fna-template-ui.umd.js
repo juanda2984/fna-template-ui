@@ -138,7 +138,7 @@
             }));
             $("li.header-section, #toTop").addClass("ico-contraste");
             $(".breadcrumb, .breadcrumb *").css("background", "transparent");
-            $(".button, .link-fondoenlinea a, .link-fondoenlinea a span, a.dowload-app, a.dowload-app *:not(img)")
+            $("button,.button, .link-fondoenlinea a, .link-fondoenlinea a span, a.dowload-app, a.dowload-app *:not(img)")
                 .each(( /**
          * @this {?}
          * @return {?}

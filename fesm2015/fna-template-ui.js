@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
-import { Injectable, Component, Renderer2, NgModule, defineInjectable } from '@angular/core';
+import { Injectable, Component, NgModule, Renderer2, defineInjectable } from '@angular/core';
 
 /**
  * @fileoverview added by tsickle
@@ -137,7 +137,7 @@ function contrasteF(n) {
         }));
         $("li.header-section, #toTop").addClass("ico-contraste");
         $(".breadcrumb, .breadcrumb *").css("background", "transparent");
-        $(".button, .link-fondoenlinea a, .link-fondoenlinea a span, a.dowload-app, a.dowload-app *:not(img)")
+        $("button,.button, .link-fondoenlinea a, .link-fondoenlinea a span, a.dowload-app, a.dowload-app *:not(img)")
             .each((/**
          * @this {?}
          * @return {?}
