@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
-import { Injectable, NgModule, Component, Renderer2, defineInjectable } from '@angular/core';
+import { Injectable, Component, Renderer2, NgModule, defineInjectable } from '@angular/core';
 
 /**
  * @fileoverview added by tsickle
