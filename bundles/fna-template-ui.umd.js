@@ -4,10 +4,6 @@
     (factory((global['fna-template-ui'] = {}),global.ng.common,global.ng.platformBrowser,global.ng.core));
 }(this, (function (exports,common,platformBrowser,i0) { 'use strict';
 
-    /**
-     * @fileoverview added by tsickle
-     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-     */
     var FnaTemplateUiService = /** @class */ (function () {
         function FnaTemplateUiService() {
         }
@@ -18,25 +14,15 @@
         ];
         /** @nocollapse */
         FnaTemplateUiService.ctorParameters = function () { return []; };
-        /** @nocollapse */ FnaTemplateUiService.ngInjectableDef = i0.defineInjectable({ factory: function FnaTemplateUiService_Factory() { return new FnaTemplateUiService(); }, token: FnaTemplateUiService, providedIn: "root" });
+        FnaTemplateUiService.ngInjectableDef = i0.defineInjectable({ factory: function FnaTemplateUiService_Factory() { return new FnaTemplateUiService(); }, token: FnaTemplateUiService, providedIn: "root" });
         return FnaTemplateUiService;
     }());
 
-    /**
-     * @fileoverview added by tsickle
-     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-     */
     var FnaTemplateUiComponent = /** @class */ (function () {
         function FnaTemplateUiComponent() {
         }
-        /**
-         * @return {?}
-         */
-        FnaTemplateUiComponent.prototype.ngOnInit = /**
-         * @return {?}
-         */
-            function () {
-            };
+        FnaTemplateUiComponent.prototype.ngOnInit = function () {
+        };
         FnaTemplateUiComponent.decorators = [
             { type: i0.Component, args: [{
                         selector: 'lib-fna-template-ui',
@@ -48,62 +34,39 @@
         return FnaTemplateUiComponent;
     }());
 
-    /**
-     * @fileoverview added by tsickle
-     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-     */
     /* ==================== CONTRASTE ==================== */
-    /**
-     * @param {?} n
-     * @return {?}
-     */
     function contrasteF(n) {
-        /** @type {?} */
         var iconos = ".links-accesibility a img, .resp-acces a img, .ms-srch-sb > .ms-srch-sb-searchLink, .page-utilities a img, .right-item-doc, .page-utilities .utility img, #gestion a.highlight-detail img, #content-related img, #quickLinks .container #highlights .hLights li.tab a img, #quickLinks .container #social ul.redesS li.dfwp-item a img, a.highlight-detail img, #Ayuda .container .right #channels img, .close-btn";
-        /** @type {?} */
         var blanco = 'white';
-        /** @type {?} */
         var negro = 'black';
-        /** @type {?} */
         var azulOb = '#003087';
-        /** @type {?} */
         var azul = '#3366cc';
-        /** @type {?} */
         var valor = Number(n) || 0;
         if (valor > 0) {
             $(".huawei-icon").css({
                 "background": "url('assets/fna/img/AppGallery1.png') no-repeat center",
                 "background-size": "contain"
             });
-            $('html *:not(script, style, noscript)').each(( /**
-             * @this {?}
-             * @return {?}
-             */function () {
+            $('html *:not(script, style, noscript)').each(function () {
                 $(this).css({
                     "background-color": "transparent",
                     "color": blanco
                 });
-            }));
+            });
             $("#logoGobiernoColombia").attr("src", "assets/fna/img/logo_gobierno_nuevo_alto_contraste.png");
             $("#logoGobiernoColombia2").attr("src", "assets/fna/img/logo_gobierno_nuevo_alto_contraste.png");
-            $('._720kb-datepicker-calendar').each(( /**
-             * @this {?}
-             * @return {?}
-             */function () {
+            $('._720kb-datepicker-calendar').each(function () {
                 $(this).css({
                     "background-color": negro,
                     "color": blanco
                 });
-            }));
-            $('.modal-content').each(( /**
-             * @this {?}
-             * @return {?}
-             */function () {
+            });
+            $('.modal-content').each(function () {
                 $(this).css({
                     "background-color": negro,
                     "color": blanco
                 });
-            }));
+            });
             $('.accesibilidadBotonApp').css({ "color": negro });
             $("body").css({
                 "border-color": blanco,
@@ -128,28 +91,22 @@
             });
             $(iconos).css("filter", "grayscale(100%) brightness(300%)");
             $("section").not("#slider, .image-container-page")
-                .each(( /**
-         * @this {?}
-         * @return {?}
-         */function () {
+                .each(function () {
                 $("#slider *, .image-container-page *, #seguros, #seguros *")
                     .css("background", "transparent");
                 this.style.background = negro;
-            }));
+            });
             $("li.header-section, #toTop").addClass("ico-contraste");
             $(".breadcrumb, .breadcrumb *").css("background", "transparent");
             $("button,.button, .link-fondoenlinea a, .link-fondoenlinea a span, a.dowload-app, a.dowload-app *:not(img)")
-                .each(( /**
-         * @this {?}
-         * @return {?}
-         */function () {
+                .each(function () {
                 this.style.background = blanco;
                 $(this).css({
                     color: negro,
                     borderColor: blanco,
                     borderStyle: 'solid'
                 });
-            }));
+            });
             $("#footerFNA button").css({
                 "background-color": negro,
                 "color": blanco,
@@ -171,184 +128,110 @@
                 "color": "",
                 "border": ""
             });
-            $('html *:not(script, style, noscript)').each(( /**
-             * @this {?}
-             * @return {?}
-             */function () {
+            $('html *:not(script, style, noscript)').each(function () {
                 $(this).css({
                     "background-color": "",
                     "color": ""
                 });
-            }));
+            });
             $("#logoGobiernoColombia").attr("src", "assets/fna/img/logo.png");
             $("#logoGobiernoColombia2").attr("src", "assets/fna/img/logo.png");
         }
     }
     /* ==================== VARIABLES ==================== */
-    /** @type {?} */
     var etiquetas = 'a, h1, h2, h3, h4, h5, h6, p, input, span, label, select, option , strong, textarea, button, div, th, td, li';
-    /** @type {?} */
     var coeficiente = 2;
-    /** @type {?} */
     var counter = 0;
     /* ==================== FUNCIONES ==================== */
-    /**
-     * @return {?}
-     */
     function reducir() {
-        /** @type {?} */
         var elementos = $(etiquetas);
         counter -= coeficiente;
         localStorage.setItem("counter", String(counter));
-        elementos.each(( /**
-         * @this {?}
-         * @return {?}
-         */function () {
-            /** @type {?} */
+        elementos.each(function () {
             var k = parseInt($(this).css('font-size'));
-            /** @type {?} */
             var redSize = (k - coeficiente);
             $(this).css('font-size', redSize);
-        }));
+        });
     }
-    /**
-     * @return {?}
-     */
     function aumentar() {
-        /** @type {?} */
         var elementos = $(etiquetas);
         counter += coeficiente;
         localStorage.setItem("counter", String(counter));
-        elementos.each(( /**
-         * @this {?}
-         * @return {?}
-         */function () {
-            /** @type {?} */
+        elementos.each(function () {
             var j = parseInt($(this).css('font-size'));
-            /** @type {?} */
             var AuSize = (j + coeficiente);
             $(this).css('font-size', AuSize);
-        }));
+        });
     }
     /* ==================== INIT ==================== */
-    /**
-     * @return {?}
-     */
     function inicializarContraste() {
-        $("#fontMenos").off("click").on("click", ( /**
-         * @return {?}
-         */function () { return reducir(); }));
-        $("#fontMas").off("click").on("click", ( /**
-         * @return {?}
-         */function () { return aumentar(); }));
+        $("#fontMenos").off("click").on("click", function () { return reducir(); });
+        $("#fontMas").off("click").on("click", function () { return aumentar(); });
     }
 
-    /**
-     * @fileoverview added by tsickle
-     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-     */
     var HeaderComponent = /** @class */ (function () {
         function HeaderComponent(titleService, renderer) {
             this.titleService = titleService;
             this.renderer = renderer;
             this.contrasteActivo = false;
         }
-        /**
-         * @return {?}
-         */
-        HeaderComponent.prototype.ngAfterViewInit = /**
-         * @return {?}
-         */
-            function () {
-                this.titleService.setTitle('Fondo Nacional del Ahorro');
-                this.setFavicon('assets/fna/img/logo.png');
-                inicializarContraste();
-                /** @type {?} */
-                var contrasteGuardado = localStorage.getItem('contraste');
-                this.contrasteActivo = contrasteGuardado === '1';
-                /** @type {?} */
-                var contraste = document.getElementById('contraste');
-                if (this.contrasteActivo) {
-                    document.body.classList.add('alto_contraste');
-                    if (contraste) {
-                        contraste.classList.add('contrast-active');
-                    }
-                    contrasteF(1);
+        HeaderComponent.prototype.ngAfterViewInit = function () {
+            this.titleService.setTitle('Fondo Nacional del Ahorro');
+            this.setFavicon('assets/fna/img/logo.png');
+            inicializarContraste();
+            var contrasteGuardado = localStorage.getItem('contraste');
+            this.contrasteActivo = contrasteGuardado === '1';
+            var contraste = document.getElementById('contraste');
+            if (this.contrasteActivo) {
+                document.body.classList.add('alto_contraste');
+                if (contraste) {
+                    contraste.classList.add('contrast-active');
                 }
-                else {
-                    document.body.classList.remove('alto_contraste');
-                    if (contraste) {
-                        contraste.classList.remove('contrast-active');
-                    }
-                    contrasteF(0);
+                contrasteF(1);
+            }
+            else {
+                document.body.classList.remove('alto_contraste');
+                if (contraste) {
+                    contraste.classList.remove('contrast-active');
                 }
-            };
-        /**
-         * @return {?}
-         */
-        HeaderComponent.prototype.toggleContraste = /**
-         * @return {?}
-         */
-            function () {
-                this.contrasteActivo = !this.contrasteActivo;
-                /** @type {?} */
-                var valor = this.contrasteActivo ? 1 : 0;
-                /** @type {?} */
-                var contraste = document.getElementById('contraste');
-                localStorage.setItem('contraste', String(valor));
-                if (this.contrasteActivo) {
-                    document.body.classList.add('alto_contraste');
-                    if (contraste) {
-                        contraste.classList.add('contrast-active');
-                    }
+                contrasteF(0);
+            }
+        };
+        HeaderComponent.prototype.toggleContraste = function () {
+            this.contrasteActivo = !this.contrasteActivo;
+            var valor = this.contrasteActivo ? 1 : 0;
+            var contraste = document.getElementById('contraste');
+            localStorage.setItem('contraste', String(valor));
+            if (this.contrasteActivo) {
+                document.body.classList.add('alto_contraste');
+                if (contraste) {
+                    contraste.classList.add('contrast-active');
                 }
-                else {
-                    document.body.classList.remove('alto_contraste');
-                    if (contraste) {
-                        contraste.classList.remove('contrast-active');
-                    }
+            }
+            else {
+                document.body.classList.remove('alto_contraste');
+                if (contraste) {
+                    contraste.classList.remove('contrast-active');
                 }
-                contrasteF(valor);
-            };
-        /**
-         * @return {?}
-         */
-        HeaderComponent.prototype.aumentarFuente = /**
-         * @return {?}
-         */
-            function () {
-                // aquí puedes llamar tu función TS aumentar() si la exportaste
-            };
-        /**
-         * @return {?}
-         */
-        HeaderComponent.prototype.disminuirFuente = /**
-         * @return {?}
-         */
-            function () {
-                // aquí puedes llamar tu función TS reducir() si la exportaste
-            };
-        /**
-         * @private
-         * @param {?} iconUrl
-         * @return {?}
-         */
-        HeaderComponent.prototype.setFavicon = /**
-         * @private
-         * @param {?} iconUrl
-         * @return {?}
-         */
-            function (iconUrl) {
-                /** @type {?} */
-                var link = document.querySelector("link[rel*='icon']");
-                if (!link) {
-                    link = ( /** @type {?} */(this.renderer.createElement('link')));
-                    link.rel = 'icon';
-                    this.renderer.appendChild(document.head, link);
-                }
-                link.type = 'image/png';
-                link.href = iconUrl;
-            };
+            }
+            contrasteF(valor);
+        };
+        HeaderComponent.prototype.aumentarFuente = function () {
+            // aquí puedes llamar tu función TS aumentar() si la exportaste
+        };
+        HeaderComponent.prototype.disminuirFuente = function () {
+            // aquí puedes llamar tu función TS reducir() si la exportaste
+        };
+        HeaderComponent.prototype.setFavicon = function (iconUrl) {
+            var link = document.querySelector("link[rel*='icon']");
+            if (!link) {
+                link = this.renderer.createElement('link');
+                link.rel = 'icon';
+                this.renderer.appendChild(document.head, link);
+            }
+            link.type = 'image/png';
+            link.href = iconUrl;
+        };
         HeaderComponent.decorators = [
             { type: i0.Component, args: [{
                         selector: 'app-header',
@@ -366,42 +249,22 @@
         return HeaderComponent;
     }());
 
-    /**
-     * @fileoverview added by tsickle
-     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-     */
     var FooterComponent = /** @class */ (function () {
         function FooterComponent() {
             this.fechaActual = '';
             this.anio = new Date().getFullYear();
         }
-        /**
-         * @return {?}
-         */
-        FooterComponent.prototype.ngOnInit = /**
-         * @return {?}
-         */
-            function () {
-                /** @type {?} */
-                var fecha = new Date();
-                /** @type {?} */
-                var meses = [
-                    'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
-                    'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'
-                ];
-                this.fechaActual = fecha.getDate() + " de " + meses[fecha.getMonth()] + " de " + fecha.getFullYear();
-            };
-        /**
-         * @param {?} url
-         * @return {?}
-         */
-        FooterComponent.prototype.abrirUrl = /**
-         * @param {?} url
-         * @return {?}
-         */
-            function (url) {
-                window.open(url, '_blank', 'noopener,noreferrer');
-            };
+        FooterComponent.prototype.ngOnInit = function () {
+            var fecha = new Date();
+            var meses = [
+                'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+                'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'
+            ];
+            this.fechaActual = fecha.getDate() + " de " + meses[fecha.getMonth()] + " de " + fecha.getFullYear();
+        };
+        FooterComponent.prototype.abrirUrl = function (url) {
+            window.open(url, '_blank', 'noopener,noreferrer');
+        };
         FooterComponent.decorators = [
             { type: i0.Component, args: [{
                         selector: 'app-footer',
@@ -412,10 +275,6 @@
         return FooterComponent;
     }());
 
-    /**
-     * @fileoverview added by tsickle
-     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-     */
     var FnaTemplateUiModule = /** @class */ (function () {
         function FnaTemplateUiModule() {
         }
@@ -439,14 +298,12 @@
         return FnaTemplateUiModule;
     }());
 
-    /**
-     * @fileoverview added by tsickle
-     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+    /*
+     * Public API Surface of fna-template-ui
      */
 
     /**
-     * @fileoverview added by tsickle
-     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     * Generated bundle index. Do not edit.
      */
 
     exports.FnaTemplateUiService = FnaTemplateUiService;
