@@ -1,0 +1,95 @@
+<footer id="footerFNA">
+  <div class="footer-scale">
+    <div class="footer-main">
+      <div class="footer-grid">
+
+        <div class="footer-vigilado">
+          <img src="assets/fna/img/logo-vigilado.png" alt="Vigilado Superfinanciera" class="imgvigilado" />
+        </div>
+
+        <div class="footer-col footer-correspondencia">
+          <h6>Punto de atención principal - Correspondencia</h6>
+
+          <p>Calle 12 # 65 - 11, Puente Aranda, Bogotá - Colombia</p>
+
+          <p>
+            Lunes a viernes de 8:00 a.m. - 4:00 p.m.<br />
+            Sábados de 8:00 a.m. - 1:00 p.m.
+          </p>
+
+          <img src="assets/fna/img/icontec.png" alt="Icontec" class="icontec-img" />
+        </div>
+
+        <div class="footer-col footer-sede">
+          <h6>Sede principal</h6>
+
+          <p>Carrera 65 # 11 - 83, Puente Aranda, Bogotá - Colombia</p>
+
+          <p>
+            <strong>Teléfono:</strong> 601 307 7070<br />
+            <strong>Línea gratuita nacional:</strong> 01 8000 52 7070<br />
+            <strong>Línea de legalización:</strong> 01 8000 12 3362
+          </p>
+
+          <p class="notificaciones">
+            <strong>Notificaciones judiciales:</strong>
+          </p>
+
+          <p>
+            <a href="mailto:notificacionesjudiciales@fna.gov.co">
+              notificacionesjudiciales@fna.gov.co
+            </a>
+          </p>
+
+          <h6 class="app-title">Descarga nuestra app</h6>
+
+          <div class="apps">
+            <button type="button"
+              (click)="abrirUrl('https://itunes.apple.com/co/app/fna-movil-agil/id1138892675?mt=8')">
+              <span class="ion-social-apple"></span>
+              <span>App Store</span>
+            </button>
+
+            <button type="button" (click)="abrirUrl('https://play.google.com/store/apps/details?id=com.ibm.fna.movil')">
+              <span class="ion-social-android"></span>
+              <span>Google play</span>
+            </button>
+
+            <button type="button" class="huawei-btn"
+              (click)="abrirUrl('https://huaweimobileservices.com/es/appgallery-esp/')">
+              <span class="huawei-icon"></span>
+              <span>Huawei App<br />Gallery</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-col footer-fecha">
+          <h6>Última actualización</h6>
+          <p>{{ fechaActual }}</p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <nav class="footer-links">
+          <a href="https://www.fna.gov.co/sobre-el-fna" target="_blank" rel="noopener noreferrer">Sobre el FNA</a>
+          <a href="https://www.fna.gov.co/prensa" target="_blank" rel="noopener noreferrer">Prensa</a>
+          <a href="https://www.fna.gov.co/atencion-ciudadana/peticiones-quejas-reclamos-y-denuncias" target="_blank"
+            rel="noopener noreferrer">PQRyD</a>
+          <a href="https://www.fna.gov.co/atencion-ciudadana/transparencia-y-acceso-a-la-informacion" target="_blank"
+            rel="noopener noreferrer">Transparencia y acceso a la información</a>
+          <a href="https://www.fna.gov.co/mapa-del-sitio" target="_blank" rel="noopener noreferrer">Mapa del sitio</a>
+          <a href="https://www.fna.gov.co/atencion-ciudadana/condiciones-y-politicas" target="_blank"
+            rel="noopener noreferrer">Condiciones y políticas</a>
+        </nav>
+
+        <div class="footer-rights">
+          © FNA Todos los derechos reservados {{ anio }}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

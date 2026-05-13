@@ -1,0 +1,179 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "488f23d8-3a52-4c6e-83b2-2f83bb04c571"
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "fna-ui": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/fna-template-ui",
+            "index": "src/index.html",
+            "main": "src/main-elements.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css",
+              "src/assets/fna/css/ionicons/2.0.0/ionicons.min.css",
+              "src/assets/fna/css/fna/1.0.0/fna.css"
+            ],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": false
+              },
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "extractLicenses": false
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "fna-ui:build:development"
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "fna-ui:build:production"
+            },
+            "development": {
+              "buildTarget": "fna-ui:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "fna-ui:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css",
+              "src/assets/fna/css/ionicons/2.0.0/ionicons.min.css",
+              "src/assets/fna/css/fna/1.0.0/fna.css"
+            ],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js"
+            ]
+          }
+        }
+      }
+    },
+    "fna-ui-lib": {
+      "projectType": "library",
+      "root": "projects/fna-ui-lib",
+      "sourceRoot": "projects/fna-ui-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "project": "projects/fna-ui-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/fna-ui-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/fna-ui-lib/tsconfig.lib.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/fna-ui-lib/src/test.ts",
+            "tsConfig": "projects/fna-ui-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/fna-ui-lib/karma.conf.js"
+          }
+        }
+      }
+    },
+    "fna-template-ui": {
+      "projectType": "library",
+      "root": "projects/fna-template-ui",
+      "sourceRoot": "projects/fna-template-ui/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "project": "projects/fna-template-ui/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/fna-template-ui/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/fna-template-ui/tsconfig.lib.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/fna-template-ui/src/test.ts",
+            "tsConfig": "projects/fna-template-ui/tsconfig.spec.json",
+            "karmaConfig": "projects/fna-template-ui/karma.conf.js"
+          }
+        }
+      }
+    }
+  }
+}

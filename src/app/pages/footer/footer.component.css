@@ -1,0 +1,245 @@
+#footerFNA .footer-scale {
+  zoom: 0.7;
+  transform-origin: top center;
+  width: 125%;
+  margin-left: -12.5%;
+}
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+#footerFNA {
+  width: 100%;
+  background: #ffffff;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 1px solid #dddddd;
+  overflow: hidden;
+}
+
+/* BLOQUE SUPERIOR */
+.footer-main {
+  width: 92%;
+  max-width: 1650px;
+  margin: 0 auto;
+  padding: 78px 0 70px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 70px 470px 520px 330px;
+  column-gap: 55px;
+  align-items: start;
+}
+
+/* VIGILADO */
+.footer-vigilado {
+  padding-top: 52px;
+}
+
+.imgvigilado {
+  width: 32px;   /* antes ~48px o más */
+  height: auto;
+  opacity: 0.9;  /* opcional: baja un poco el peso visual */
+}
+
+.imgvigilado {
+  width: 28px;
+  filter: grayscale(100%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* TEXTOS */
+.footer-col h6 {
+  margin: 0 0 18px;
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #333333;
+}
+
+.footer-col p {
+  margin: 0 0 18px;
+  font-size: 17px;
+  line-height: 1.4;
+  color: #333333;
+}
+
+.footer-col strong {
+  font-weight: 700;
+}
+
+.footer-col a {
+  color: #1c6bb8;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+/* COLUMNA 1 */
+.footer-correspondencia {
+  padding-top: 0;
+}
+
+.icontec-img {
+  width: 355px;
+  height: auto;
+  display: block;
+  margin-top: 100px;
+}
+
+/* COLUMNA 2 */
+.footer-sede {
+  padding-top: 0;
+}
+
+.notificaciones {
+  margin-top: 50px !important;
+  margin-bottom: 14px !important;
+}
+
+.app-title {
+  margin-top: 48px !important;
+  margin-bottom: 16px !important;
+}
+
+/* BOTONES APPS */
+.apps {
+  display: grid;
+  grid-template-columns: 190px 190px;
+  gap: 28px 36px;
+}
+
+.apps button {
+  width: 190px;
+  min-height: 62px;
+  border: 0;
+  border-radius: 4px;
+  background: #003087;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.apps button span:first-child {
+  font-size: 32px;
+}
+
+.huawei-btn {
+  grid-column: 1 / 2;
+}
+
+.huawei-icon {
+  width: 40px;
+  height: 40px;
+  background: url('/assets/fna/img/AppGallery1.png') no-repeat center;
+  background-size: contain;
+  display: inline-block;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* FECHA */
+.footer-fecha {
+  padding-top: 0;
+}
+
+/* BLOQUE INFERIOR */
+.footer-bottom {
+  max-width: 1650px;
+  margin: 0 auto;
+  padding: 42px 0 22px;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-rights {
+  color: #333333;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+/* RESPONSIVE BÁSICO */
+@media (max-width: 1200px) {
+  .footer-grid {
+    grid-template-columns: 60px 1fr 1fr;
+    row-gap: 40px;
+  }
+
+  .footer-fecha {
+    grid-column: 2 / 4;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-main,
+  .footer-bottom {
+    width: 90%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-vigilado {
+    padding-top: 0;
+  }
+
+  .icontec-img {
+    width: 280px;
+    margin-top: 35px;
+  }
+
+  .apps {
+    grid-template-columns: 1fr;
+  }
+
+  .apps button {
+    width: 220px;
+  }
+
+  .footer-fecha {
+    grid-column: auto;
+  }
+}

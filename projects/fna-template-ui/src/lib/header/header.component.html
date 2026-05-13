@@ -1,0 +1,80 @@
+<div class="row">
+  <a
+    href="https://www.gov.co"
+    target="_blank"
+    title="Vínculo al sitio web del Gobierno de Colombia"
+    class="linkGob"
+    rel="noopener noreferrer"
+  >
+    <div id="seccionGOV">
+      <div class="containerr">
+        <img
+          id="logoGOV"
+          src="assets/fna/img/logo_gov_co.png"
+          alt="Logo Gobierno de Colombia"
+        />
+      </div>
+    </div>
+  </a>
+</div>
+
+<header>
+  <div class="containerr" id="headerFNAT">
+    <div id="seccionFna">
+      <a
+        href="https://www.fna.gov.co"
+        target="_blank"
+        title="Vínculo al sitio web del Fondo Nacional del Ahorro"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="assets/fna/img/logo_new.png"
+          alt="Logo FNA"
+          class="img logofna"
+        />
+      </a>
+    </div>
+
+    <div class="controls">
+      <table>
+        <tr>
+          <td style="width: 20px;">
+            <span
+              id="fontMas"
+              style="font-size: xx-large; color: white;"
+              title="Aumentar tamaño de fuente"
+              tabindex="0"
+              (click)="aumentarFuente()"
+              (keydown.enter)="aumentarFuente()"
+            >
+              A
+            </span>
+          </td>
+          <td style="width: 30px; text-align: center; color: white;">
+            <span
+              id="fontMenos"
+              title="Reducir tamaño de fuente"
+              tabindex="0"
+              (click)="disminuirFuente()"
+              (keydown.enter)="disminuirFuente()"
+            >
+              A
+            </span>
+          </td>
+          <td style="width: 30px; text-align: center;">
+            <img
+              id="contraste"
+              src="assets/fna/img/contraste.png"
+              class="img img-responsive"
+              alt="Modo alto contraste"
+              title="Modo alto contraste"
+              tabindex="0"
+              (click)="toggleContraste()"
+              (keydown.enter)="toggleContraste()"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</header>

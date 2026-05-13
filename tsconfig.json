@@ -1,0 +1,46 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+
+    "paths": {
+      "fna-template-ui": [
+        "dist/fna-template-ui/fna-template-ui",
+        "dist/fna-template-ui"
+      ],
+      "fna-ui-lib": [
+        "dist/fna-ui-lib/fna-ui-lib",
+        "dist/fna-ui-lib"
+      ]
+    },
+
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    "moduleResolution": "bundler",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
+    "skipLibCheck": true
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

@@ -1,0 +1,27 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.alto-contraste {
+  filter: contrast(1.4);
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+#seccionGOV,
+#headerFNAT {
+  width: 100%;
+}
+
+.containerr {
+  width: 100%;
+}
+
+.linkGob {
+  text-decoration: none;
+}
+
+.logofna {
+  max-width: 100%;
+  height: auto;
+}
