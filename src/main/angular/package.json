@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "ng serve",
+    "build": "ng build --configuration production",
+    "build:lib": "ng build fna-template-ui && xcopy /E /I /Y projects\\fna-template-ui\\assets dist\\fna-template-ui\\assets",
+    "build-war": "ng build --configuration production"
+  },
+  "devDependencies": {
+    "@angular/cli": "^7.3.10",
+    "@angular/common": "^7.2.16",
+    "@angular/compiler": "^7.2.16",
+    "@angular/compiler-cli": "^7.2.16",
+    "@angular/core": "^7.2.16",
+    "ng-packagr": "^4.7.1",
+    "typescript": "^3.2.4"
+  }
+}
